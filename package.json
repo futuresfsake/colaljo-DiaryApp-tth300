@@ -1,0 +1,15 @@
+{
+  "name": "colaljo-diaryapp-tth300",
+  "version": "1.0.0",
+  "description": "A personal diary web app (Express + MySQL)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.14.0"
+  }
+}

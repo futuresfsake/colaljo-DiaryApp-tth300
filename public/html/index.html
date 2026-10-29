@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>📔 My Diary</h1>
+        <p>Write down your day.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 id="form-title">New entry</h2>
+            <form id="entry-form">
+                <input type="hidden" id="entry-id">
+                <input type="text" id="title" placeholder="Title" maxlength="150" required>
+                <div class="row">
+                    <input type="date" id="entry-date" required>
+                    <select id="mood"><option value="">No mood</option></select>
+                </div>
+                <textarea id="content" rows="6" placeholder="Dear diary..." required></textarea>
+                <div class="row">
+                    <button type="submit" id="save-btn">Save entry</button>
+                    <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="row filters">
+                <input type="search" id="search" placeholder="Search entries...">
+                <select id="filter-mood"><option value="">All moods</option></select>
+            </div>
+            <div id="entries"></div>
+        </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
